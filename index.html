@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Shopping App</title>
+        <link href="/styles/styles1.css" rel="stylesheet">
+        <link href="/images/favicon.png" rel="icon">
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Shopping App</h1>
+                <h2 class="header__subtitle">What do you need to buy?</h2>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" class="input" type="text" placeholder="Search products">
+                <label class="checkbox">
+                    <input id="hide-completed" type="checkbox"> Hide bought
+                </label>
+            </div>
+        </div>
+        <div class="container">
+                <div id="products"></div>
+                <form id="new-todo">
+                    <input class="input" type="text" placeholder="Enter product here" name="newProduct">
+                    <select class="input" id="category" name="Category">
+                        <option value="dairyProducts">Dairy Products</option>
+                        <option value="meat">Meat</option>
+                        <option value="drinks">Drinks and Beverages</option>
+                        <option value="dryProducts">Dry Products</option>
+                        <option value="cosmetics">Cosmetics and Hygiene</option>
+                        <option value="sweets">Sweets</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button class="button">Add product</button>
+                </form>
+        </div>
+
+        
+        
+
+        <script src="/scripts/uuidv4.js"></script>
+        <script src="/scripts/shopping-functions.js"></script>
+        <script src="/scripts/shopping.js"></script>
+    </body>
+</html>
